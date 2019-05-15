@@ -1,3 +1,1 @@
-
-
 locate -b syslog
