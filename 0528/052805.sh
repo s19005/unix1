@@ -1,1 +1,1 @@
-sudo find /var -type f | xargs sudo du 2> /dev/null | grep '^0' 
+sudo find /var -type f -exec du \{\} \; | grep '^0' 
