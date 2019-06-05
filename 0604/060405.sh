@@ -12,7 +12,7 @@ function cont() {
 cd $HOME/repo/unix1/
 git status
 cont
-echo -n 'a.add b.commit c.push: '
+echo -n 'a.add b.commit c.push *.exit: '
 read abc
 case "$abc" in
 	a)
@@ -27,5 +27,9 @@ case "$abc" in
 	c)
 		git push
 		~
+		;;
+	\*)
+		echo 'exit...'
+		exit
 esac
 
