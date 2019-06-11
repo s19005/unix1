@@ -1,6 +1,6 @@
 #!/bin/bash
 
-summer=`date --date="2019/9/1" +'%s'`
-now=`date +%s`
+summer=`date --date="2019/9/1" +'%j'`
+now=`date +%j`
 
-echo $(((summer - now)/(60 * 60 * 24)))
+echo "夏休みまであと$((summer - now))日です"
